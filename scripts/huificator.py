@@ -15,6 +15,7 @@ def get_hui(word):
     :param word: str
     :return changed word using huificator: str
     """
+    word = word.lower()
     for i, letter in enumerate(word):
         if letter in vowels or letter in soft:
             break
